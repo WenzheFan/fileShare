@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIDocumentInteractionControllerDelegate>
 
+@property (strong, nonatomic) IBOutlet UIButton *documentInteractionButton;
+@property (strong, nonatomic) IBOutlet UIButton *actBTN;
+- (IBAction)TestFile:(id)sender;
+- (IBAction)TestFile2:(id)sender;
 
 @end
 

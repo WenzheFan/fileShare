@@ -15,6 +15,10 @@
 		181935DD20C4E2AE007B8217 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 181935DC20C4E2AE007B8217 /* main.m */; };
 		181935E720C4E2AE007B8217 /* iOS_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181935E620C4E2AE007B8217 /* iOS_____Tests.m */; };
 		181935F220C4E2AE007B8217 /* iOS_____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181935F120C4E2AE007B8217 /* iOS_____UITests.m */; };
+		1819360020C4E40E007B8217 /* Steve.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 181935FF20C4E40E007B8217 /* Steve.pdf */; };
+		1819360420C4E80D007B8217 /* ShareFileTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819360220C4E80D007B8217 /* ShareFileTwo.m */; };
+		1819360520C4E80D007B8217 /* ShareFileTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1819360320C4E80D007B8217 /* ShareFileTwo.xib */; };
+		1819360820C4E94D007B8217 /* ZSCustomActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1819360620C4E94C007B8217 /* ZSCustomActivity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		181935ED20C4E2AE007B8217 /* iOS文件共享一UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS文件共享一UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		181935F120C4E2AE007B8217 /* iOS_____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "iOS_____UITests.m"; sourceTree = "<group>"; };
 		181935F320C4E2AE007B8217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181935FF20C4E40E007B8217 /* Steve.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Steve.pdf; sourceTree = "<group>"; };
+		1819360120C4E80D007B8217 /* ShareFileTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareFileTwo.h; sourceTree = "<group>"; };
+		1819360220C4E80D007B8217 /* ShareFileTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareFileTwo.m; sourceTree = "<group>"; };
+		1819360320C4E80D007B8217 /* ShareFileTwo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShareFileTwo.xib; sourceTree = "<group>"; };
+		1819360620C4E94C007B8217 /* ZSCustomActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSCustomActivity.m; sourceTree = "<group>"; };
+		1819360720C4E94D007B8217 /* ZSCustomActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSCustomActivity.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +113,14 @@
 			children = (
 				181935CD20C4E2AC007B8217 /* AppDelegate.h */,
 				181935CE20C4E2AC007B8217 /* AppDelegate.m */,
+				1819360120C4E80D007B8217 /* ShareFileTwo.h */,
+				1819360220C4E80D007B8217 /* ShareFileTwo.m */,
+				1819360320C4E80D007B8217 /* ShareFileTwo.xib */,
+				1819360720C4E94D007B8217 /* ZSCustomActivity.h */,
+				1819360620C4E94C007B8217 /* ZSCustomActivity.m */,
 				181935D020C4E2AC007B8217 /* ViewController.h */,
 				181935D120C4E2AC007B8217 /* ViewController.m */,
+				181935FF20C4E40E007B8217 /* Steve.pdf */,
 				181935D320C4E2AC007B8217 /* Main.storyboard */,
 				181935D620C4E2AE007B8217 /* Assets.xcassets */,
 				181935D820C4E2AE007B8217 /* LaunchScreen.storyboard */,
@@ -235,8 +251,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1819360020C4E40E007B8217 /* Steve.pdf in Resources */,
 				181935DA20C4E2AE007B8217 /* LaunchScreen.storyboard in Resources */,
 				181935D720C4E2AE007B8217 /* Assets.xcassets in Resources */,
+				1819360520C4E80D007B8217 /* ShareFileTwo.xib in Resources */,
 				181935D520C4E2AC007B8217 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +282,8 @@
 			files = (
 				181935D220C4E2AC007B8217 /* ViewController.m in Sources */,
 				181935DD20C4E2AE007B8217 /* main.m in Sources */,
+				1819360420C4E80D007B8217 /* ShareFileTwo.m in Sources */,
+				1819360820C4E94D007B8217 /* ZSCustomActivity.m in Sources */,
 				181935CF20C4E2AC007B8217 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,12 +454,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74K483LR5N;
 				INFOPLIST_FILE = "iOS文件共享一/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.newyifenqi.iOS-----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.newyifenqi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,12 +471,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74K483LR5N;
 				INFOPLIST_FILE = "iOS文件共享一/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.newyifenqi.iOS-----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.newyifenqi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

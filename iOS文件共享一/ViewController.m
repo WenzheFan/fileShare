@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import "ShareFileTwo.h"
 @interface ViewController ()
-
+@property (nonatomic,strong) UIDocumentInteractionController *documentController;
 @end
 
 @implementation ViewController
@@ -25,5 +25,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)TestFile:(id)sender {
+    _documentController = [UIDocumentInteractionController interactionControllerWithURL:[[NSBundle mainBundle] URLForResource:@"Steve" withExtension:@"pdf"]];
+    _documentController.delegate = self;
+    [self presentOptionsMenu];
+}
+
+- (IBAction)TestFile2:(id)sender {
+    ShareFileTwo *vc = [[ShareFileTwo alloc]init];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+- (void)presentOptionsMenu{
+     [_documentController presentOptionsMenuFromRect:self.view.bounds inView:self.view animated:YES];
+}
+- (UIViewController *)documentInteractionControllerViewControllerForPreview:(UIDocumentInteractionController *)controller
+{
+    return self;
+}
 
 @end
